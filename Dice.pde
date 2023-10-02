@@ -1,7 +1,8 @@
 Die hi;
+int holabolasummationofdice = 0;
 void setup()
 {
-  size(1000,1000);
+  size(1000,1200);
   noLoop();
   noStroke();
 }
@@ -15,9 +16,13 @@ void draw()
       hi.roll();
     }
   }
+  fill(0);
+  textSize(50);
+  text("Total: " + holabolasummationofdice, 400, 500);
 }
 void mousePressed()
 {
+  holabolasummationofdice = 0;
   redraw();
 }
 class Die //models one single dice cube
@@ -66,6 +71,7 @@ class Die //models one single dice cube
       ellipse(X-5,Y,5,5);
       ellipse(X+5,Y,5,5);
     }
+    holabolasummationofdice+=rol;
   }
   void show()
   {
