@@ -78,7 +78,7 @@ class Die //models one single dice cube
     else if (Math.random() < 0.3333333)
     fill(#ffcaaf);
     else if (Math.random() < 0.5)
-    fill(#dab894);
+    fill(#ffee93);
     else
     fill(#ffb3c6);
     rect(X-10,Y-10,20,20,3);
