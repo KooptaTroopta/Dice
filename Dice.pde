@@ -8,8 +8,8 @@ void setup()
 void draw()
 {
   background(255);
-  for (int i = 20; i <= 1000; i+=20) {
-    for (int j = 20; j <= 1000; j+=20) {
+  for (int i = 10; i <= 1000; i+=20) {
+    for (int j = 10; j <= 1000; j+=20) {
       hi = new Die(i,j);
       hi.show();
       hi.roll();
