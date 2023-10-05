@@ -3,8 +3,6 @@ PFont zawg;
 int holabolasummationofdice = 0;
 void setup()
 {
-  String[] baba = PFont.list();
-  printArray(baba);
   size(1000,1200);
   noLoop();
   noStroke();
