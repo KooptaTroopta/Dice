@@ -1,7 +1,10 @@
 Die hi;
+PFont zawg;
 int holabolasummationofdice = 0;
 void setup()
 {
+  String[] baba = PFont.list();
+  printArray(baba);
   size(1000,1200);
   noLoop();
   noStroke();
@@ -16,9 +19,11 @@ void draw()
       hi.roll();
     }
   }
-  fill(0);
+  fill(100);
   textSize(50);
-  text("Total: " + holabolasummationofdice, 400, 500);
+  zawg = createFont("Century Gothic Bold",50);
+  textFont(zawg);
+  text("Total: " + holabolasummationofdice, 400, 1100);
 }
 void mousePressed()
 {
